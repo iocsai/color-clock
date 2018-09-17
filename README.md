@@ -12,4 +12,4 @@ Practicing JavaScript programming a real-time clock.
 
 # Live version
 
-iocsai.github.io/color-clock
+https://iocsai.github.io/color-clock/
