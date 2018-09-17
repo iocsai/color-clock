@@ -1,64 +1,22 @@
 <!DOCTYPE html>
 <!--
-Created using JS Bin
-http://jsbin.com
-
-Copyright (c) 2018 by iocsai (http://jsbin.com/turunuv/1/edit)
-
-Released under the MIT license: http://jsbin.mit-license.org
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
 -->
-<meta name="robots" content="noindex">
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
-<style id="jsbin-css">
-html, body {
-  height: 100%;
-}
-
-#color-clock {
-  text-align: center;
-  position: relative;
-  bottom: -50%;
-}
-
-</style>
-</head>
-<body>
-<div id="color-clock">12:12:12</div>
-<script id="jsbin-javascript">
-function colorClock(){
-  var date = new Date();
-  var hours = date.getHours();
-  var minutes = date.getMinutes();
-  var seconds = date.getSeconds();
-
-  if (hours <= 9) {
-    hours = '0' + hours;
-  }
-  if (minutes <= 9) {
-    minutes = '0' + minutes;
-  }
-  if (seconds <= 9) {
-    seconds = '0' + seconds;
-  }
-
-  var clockFace = hours + ':' + minutes + ':' + seconds;
-  var hexColor = '#' + hours + minutes + seconds;
-
-  document.getElementById('clock').innerHTML = clockFace;
-  document.body.style.background = hexColor;
-  
-  setTimeout(function() {
-  colorClock();
-}, 1000);
-}
-
-
-
-colorClock();
-</script>
-</body>
+<html lang="en">
+    <head>
+        <title>Color clock</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Metamorphous" rel="stylesheet">
+        <script src="scripts.js" type="text/javascript"></script>
+        
+    </head>
+    <body>
+        <div id="clock"><script>colorClock();</script></div>
+        
+    </body>
 </html>
